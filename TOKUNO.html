@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TOKUNO processing shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .product-card {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TOKUNO processing shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Catalog page</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Shopping cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Inquiry</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-white text-dark text-center p-5" data-aos="fade-down">
+    <h1>TOKUNO世界へようこそ こだわりの商品をあなたに</h1>
+    <p><strong>Carefully selected materials and products of the highest quality for you.</strong></p>
+  </header>
+
+  <!-- 🔄 Carousel Start -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/1200x400?text=Welcome+to+TOKUNO" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1200x400?text=Handmade+with+Care" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1200x400?text=Custom+Orders+Available" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- 🔄 Carousel End -->
+
+  <main class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top product-img" alt="商品1">
+          <div class="card-body">
+            <h5 class="card-title">小物系</h5>
+            <p class="card-text">ポーチ、巾着袋、手帳ケースなど日常生活で使える商品がここに</p>
+            <p class="fw-bold">30$-60$</p>
+            <a href="cart.html?product=1" class="btn btn-primary">商品ページへ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top product-img" alt="商品2">
+          <div class="card-body">
+            <h5 class="card-title">コスプレ用品</h5>
+            <p class="card-text">お客様に寄り添い全てハンドメイドで作成しております。</p>
+            <p class="fw-bold">200$～</p>
+            <a href="cart.html?product=2" class="btn btn-primary">商品ページへ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card product-card">
+          <img src="https://via.placeholder.com/400x200" class="card-img-top product-img" alt="特殊品">
+          <div class="card-body">
+            <h5 class="card-title">特殊品</h5>
+            <p class="card-text">リングピロー,手提げバック,竹刀入れ等全てオーダーメイド可能でございます。</p>
+            <p class="fw-bold">価格は制作物によって変わります</p>
+            <a href="cart.html?product=3" class="btn btn-primary">商品ページへ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3" data-aos="fade-up">
+    <p>&copy; 2025 TOKUNO. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap + AOS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
